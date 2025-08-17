@@ -11,3 +11,35 @@
   --font-roboto: "Roboto", sans-serif;
   --font-noto: "Noto Serif", serif;
 }
+
+.icon-call {
+  background-image: url("../assets/call.png");
+}
+
+.icon-mail {
+  background-image: url("../assets/email.png");
+}
+
+.icon-discord {
+  background-image: url("../assets/discord.png");
+}
+
+.icon-facebook {
+  background-image: url("../assets/facebook.png");
+}
+
+.icon-github {
+  background-image: url("../assets/github.png");
+}
+
+.icon-insta {
+  background-image: url("../assets/instagram.png");
+}
+
+.icon-linkedin {
+  background-image: url("../assets/linkedin.png");
+}
+
+.icon {
+  background-image: url("../assets/other.png");
+}
