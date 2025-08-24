@@ -7,7 +7,7 @@ interface FooterProps {
 export default function Footer({ className = "" }: FooterProps) {
     return (
         <footer className={className}>
-            <div className="flex-auto">
+            <div className="px-5 py-2">
                 ©{" "}
                 {resource.footer["copyright-year"]
                     ? resource.footer["copyright-year"]
@@ -16,7 +16,7 @@ export default function Footer({ className = "" }: FooterProps) {
                     ? resource.footer["copyright-org"]
                     : ""}
             </div>
-            <div className="flex flex-none justify-items-end">
+            {/* <div className="flex flex-none justify-items-end">
                 {resource.footer.contact.map((value) => {
                     return (
                         <div className="flex-col flex-none px-3">
@@ -54,7 +54,7 @@ export default function Footer({ className = "" }: FooterProps) {
                         );
                     })}
                 </div>
-            </div>
+            </div> */}
         </footer>
     );
 }
