@@ -8,7 +8,7 @@ const academic = [
     {
         year: "2023-2024",
         degree: "Administrative Business Management",
-        logo: "/src/assets/conestoga-logo.svg",
+        logo: "./src/assets/conestoga-logo.svg",
         college: "Conestoga College",
         address: "Brantford, Ontario, Canada",
         description: [
@@ -21,7 +21,7 @@ const academic = [
     {
         year: "2023-2023",
         degree: "Project Management",
-        logo: "/src/assets/conestoga-logo.svg",
+        logo: "./src/assets/conestoga-logo.svg",
         college: "Conestoga College",
         address: "Brantford, Ontario, Canada",
         description: [
@@ -35,7 +35,7 @@ const academic = [
     {
         year: "2015-2021",
         degree: "Bachelor of Engineering Civil Engineer",
-        logo: "/src/assets/sinhgad.jpeg",
+        logo: "./src/assets/sinhgad.jpeg",
         college: "Sinhagad Academy of Engineering, Pune university",
         address: "Pune, Maharastra, India",
         description: [
@@ -53,7 +53,7 @@ function Academic() {
         <div className="flex gap-10">
             <img
                 className="hidden md:block w-3/25 sidebar h-screen object-cover"
-                src="/src/assets/pencils.jpg"
+                src="./src/assets/pencils.jpg"
             />
             <div className="p-2 md:p-5 font-bold tracking-widest text-center md:text-left text-2xl md:text-4xl lg:text-6xl">
                 <p className='text-center md:text-left mt-20'>EDUCATION ACCOMPLISHMENTS</p>

@@ -38,7 +38,7 @@ function About() {
             <div className="flex flex-col lg:flex-row m-auto justify-center items-center gap-6 pb-20">
                 <img
                     className="h-75 w-75 lg:h-100 lg:w-100 rounded-full m-3 object-cover"
-                    src="/src/assets/imagePerson.jpg"
+                    src="./src/assets/imagePerson.jpg"
                 />
                 <div className="text-justify text-wrap p-5 font-bold w-4/5 lg:w-2/5 text-lg md:text-xl lg:text-2xl">
                     I am a Certified Project Coordinator and Civil Engineer
@@ -65,7 +65,7 @@ function About() {
             </div>
             <div className="my-4">
                 <img
-                    src="/src/assets/whatido.jpg"
+                    src="./src/assets/whatido.jpg"
                     className="h-35 w-35 lg:h-50 lg:w-50 rounded-full object-cover mx-auto"
                 />
             </div>

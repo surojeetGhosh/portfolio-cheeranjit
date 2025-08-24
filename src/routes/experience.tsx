@@ -55,7 +55,7 @@ function Experience() {
                 <p className="text-center mt-20">PROFESSIONAL BACKGROUND</p>
                 <img
                     className="w-50 h-50 md:h-100 md:w-100 object-contain m-auto"
-                    src="/src/assets/work.jpg"
+                    src="./src/assets/work.jpg"
                 />
                 <div className="text-lg md:text-xl lg:text-2xl tracking-normal xl:max-w-4/5 xl:m-auto">
                     {experience.map((value) => (
