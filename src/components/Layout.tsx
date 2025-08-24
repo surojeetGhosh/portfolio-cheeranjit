@@ -5,9 +5,9 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 // width - 1024
 export default function Layout() {
   return (
-    <div className="flex w-screen h-screen flex-col text-gray-700">
+    <div className="flex min-w-screen min-h-screen flex-col text-gray-700">
       <Navbar />
-      <div className="h-screen w-screen">
+      <div className="min-h-screen min-w-screen">
         <Outlet />
       </div>
       <Footer className="font-roboto footer-shadow text-center text-xs" />

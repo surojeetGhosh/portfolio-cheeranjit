@@ -3,7 +3,7 @@
     "footer": {
         "copyright-year": 2025,
         "copyright-org": "Cheeranjit Ghosh",
-        "contact": [
+        "social": [
             {
                 "type": "phone",
                 "value": "226-966-0056"
@@ -11,9 +11,7 @@
             {
                 "type": "email",
                 "value": "cheeranjitghosh@gmail.com"
-            }
-        ],
-        "social": [
+            },
             {
                 "type": "discord",
                 "value": "https://discord.com/users/cheeranjitghosh"
