@@ -1,25 +1,27 @@
 {
-  "menu-item": ["ABOUT", "ACADEMIC", "EXPERIENCE", "SKILLS"],
-  "footer": {
-    "copyright-year": 2025,
-    "copyright-org": "Cheeranjit Ghosh",
-    "contactList": [
-      {
-        "type": "Phone",
-        "value": "226-966-0056"
-      },
-      {
-        "type": "Email",
-        "value": "cheeranjitghosh@gmail.com"
-      },
-      {
-        "type": "Discord",
-        "value": "https://discord.com/users/cheeranjitghosh"
-      },
-      {
-        "type": "Linkedin",
-        "value": "https://www.linkedin.com/in/cheeranjit-ghosh"
-      }
-    ]
-  }
+    "menu-item": ["ABOUT", "ACADEMIC", "EXPERIENCE", "SKILLS"],
+    "footer": {
+        "copyright-year": 2025,
+        "copyright-org": "Cheeranjit Ghosh",
+        "contact": [
+            {
+                "type": "phone",
+                "value": "226-966-0056"
+            },
+            {
+                "type": "email",
+                "value": "cheeranjitghosh@gmail.com"
+            }
+        ],
+        "social": [
+            {
+                "type": "discord",
+                "value": "https://discord.com/users/cheeranjitghosh"
+            },
+            {
+                "type": "linkedin",
+                "value": "https://www.linkedin.com/in/cheeranjit-ghosh"
+            }
+        ]
+    }
 }
