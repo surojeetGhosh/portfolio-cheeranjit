@@ -13,6 +13,11 @@
   --font-noto: "Noto Serif", serif;
 }
 
+.sidebar {
+  position: relative;
+  top: 30rem;
+}
+
 .welcome-heading {
   letter-spacing: 5px;
 }
