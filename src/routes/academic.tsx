@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import conestogaLogo from "../assets/conestoga-logo.svg";
 import sinhgadLogo from "../assets/sinhgad.jpeg";
-import pencilLogo from "../assets/pencils.jpg";
+import sideBar from "../assets/Wave.svg";
 
 export const Route = createFileRoute("/academic")({
   component: Academic,
@@ -53,10 +53,10 @@ const academic = [
 
 function Academic() {
   return (
-    <div className="flex gap-10">
+    <div className="relative flex gap-10">
       <img
-        className="sidebar hidden h-screen w-3/25 object-cover md:block"
-        src={pencilLogo}
+        className="hidden min-h-600 w-3/25 overflow-hidden object-cover md:block"
+        src={sideBar}
       />
       <div className="p-2 text-center text-2xl font-bold tracking-widest md:p-5 md:text-left md:text-4xl lg:text-6xl">
         <p className="mt-20 text-center md:text-left">
