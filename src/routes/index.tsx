@@ -54,7 +54,7 @@ function About() {
                 <a
                   className={`flex-none px-5`}
                   href={value.value}
-                  target="__blank"
+                  target="_blank"
                 >
                   <div
                     className={`icon-${value.type} m-auto h-6 w-6 md:h-10 md:w-10`}

@@ -6,11 +6,11 @@
         "social": [
             {
                 "type": "phone",
-                "value": "226-966-0056"
+                "value": "tel:226-966-0056"
             },
             {
                 "type": "email",
-                "value": "cheeranjitghosh@gmail.com"
+                "value": "mailto:cheeranjitghosh@gmail.com"
             },
             {
                 "type": "discord",
