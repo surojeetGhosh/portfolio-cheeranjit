@@ -10,7 +10,7 @@ export default function Card(props: CardProps) {
   return (
     <div className={props.className}>
       <div
-        className={`${props.headingColor ? props.headingColor : "bg-gray-100"} rounded-2xl p-3 shadow-2xl md:p-4 lg:p-5`}
+        className={`${props.headingColor ? props.headingColor : "bg-gray-100"} h-full w-full rounded-2xl p-3 shadow-2xl md:p-4 lg:p-5`}
       >
         <div className="p-2 text-center font-bold tracking-widest uppercase">
           {props.heading}

@@ -72,7 +72,7 @@ function About() {
         />
       </div>
 
-      <div className="m-auto flex w-4/5 flex-col flex-wrap justify-center gap-10 p-5 md:p-7 lg:p-10 xl:flex-row">
+      <div className="m-auto flex w-4/5 flex-col flex-wrap items-stretch justify-center gap-10 p-5 md:p-7 lg:p-10 xl:flex-row">
         {dataAbout.map((value) => (
           <Card heading={value.key} body={value.value} className="flex-1" />
         ))}
