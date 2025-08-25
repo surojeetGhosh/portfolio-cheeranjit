@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-
 :root {
   --font-roboto: "Roboto", sans-serif;
   --font-noto: "Noto Serif", serif;
@@ -78,19 +77,5 @@
 }
 
 .footer-shadow {
-  box-shadow: 0 -4px 8px -2px rgba(0,0,0,0.15);
-}
-
-.meteor-bg {
-  background-image: url("../assets/meteor-bg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.wave-bg {
-  background-image: url("../assets/wave-bg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  box-shadow: 0 -4px 8px -2px rgba(0, 0, 0, 0.15);
 }
