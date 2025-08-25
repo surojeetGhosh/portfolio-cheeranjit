@@ -32,22 +32,11 @@ export default function Navbar({ className = "" }: NavbarProps) {
     }
   };
 
-  const onTouchNavButton = () => {
-    const navBar: HTMLElement | null = document.getElementById("navigation");
-    if (!toggleNavButton) {
-      visibleNav(navBar);
-    } else {
-      disableNav(navBar);
-    }
-    setToggleNavButton(!toggleNavButton);
-  };
-
   return (
     <nav className={className}>
       <div
         className="cursor-default p-3 delay-150 duration-100 ease-in hover:text-amber-600 md:hidden"
         onClick={onClickNavButton}
-        onTouchStart={onTouchNavButton}
       >
         <span className="material-symbols-outlined">menu</span>
       </div>
