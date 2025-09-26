@@ -33,39 +33,43 @@ export default function Navbar({ className = "" }: NavbarProps) {
   };
 
   return (
-    <nav className={className}>
+    <nav className={`${className} bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200/50 sticky top-0 z-50`}>
       <div
-        className="cursor-default p-3 delay-150 duration-100 ease-in hover:text-amber-600 md:hidden"
+        className="cursor-pointer p-4 text-engineering-gray hover:text-accent-500 transition-colors duration-200 md:hidden"
         onClick={onClickNavButton}
       >
-        <span className="material-symbols-outlined">menu</span>
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </div>
       <div id="navigation" className="hidden md:block">
-        <div className="font-roboto mx-auto box-border flex w-3/5 cursor-default flex-col items-center-safe py-3 text-center font-bold tracking-widest md:flex-row">
-          <Link
-            to="/"
-            className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
-          >
-            {navigationData["menu-item"][0]}
-          </Link>
-          <Link
-            to="/academic"
-            className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
-          >
-            {navigationData["menu-item"][1]}
-          </Link>
-          <Link
-            to="/experience"
-            className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
-          >
-            {navigationData["menu-item"][2]}
-          </Link>
-          <Link
-            to="/skills"
-            className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
-          >
-            {navigationData["menu-item"][3]}
-          </Link>
+        <div className="font-inter mx-auto max-w-6xl flex items-center justify-center py-4 px-6">
+          <div className="flex space-x-8">
+            <Link
+              to="/"
+              className="nav-link text-engineering-gray font-medium text-sm uppercase tracking-wider hover:text-primary-600 transition-colors duration-200"
+            >
+              {navigationData["menu-item"][0]}
+            </Link>
+            <Link
+              to="/academic"
+              className="nav-link text-engineering-gray font-medium text-sm uppercase tracking-wider hover:text-primary-600 transition-colors duration-200"
+            >
+              {navigationData["menu-item"][1]}
+            </Link>
+            <Link
+              to="/experience"
+              className="nav-link text-engineering-gray font-medium text-sm uppercase tracking-wider hover:text-primary-600 transition-colors duration-200"
+            >
+              {navigationData["menu-item"][2]}
+            </Link>
+            <Link
+              to="/skills"
+              className="nav-link text-engineering-gray font-medium text-sm uppercase tracking-wider hover:text-primary-600 transition-colors duration-200"
+            >
+              {navigationData["menu-item"][3]}
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

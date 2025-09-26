@@ -8,39 +8,71 @@ export const Route = createFileRoute("/experience")({
 
 function Experience() {
   return (
-    <div>
-      <div className="p-2 text-center text-2xl font-bold tracking-widest md:p-5 md:text-left md:text-4xl lg:text-6xl">
-        <p className="mt-20 text-center">{experienceData.heading}</p>
-        <img
-          className="m-auto h-50 w-50 object-contain md:h-100 md:w-100"
-          src={workImg}
-        />
-        <div className="text-lg tracking-normal md:text-xl lg:text-2xl xl:m-auto xl:max-w-4/5">
-          {experienceData.items.map((value) => (
-            <div className="m-5 flex flex-col items-center justify-center rounded-2xl bg-white p-2 shadow-xl md:p-3 lg:flex-row">
-              <div className="text-center lg:text-left">
-                <p className="max-w-100 py-4 text-lg tracking-wider text-blue-700 md:text-xl lg:text-2xl">
-                  {value.year}
-                </p>
-                <p className="pb-5">{value.position}</p>
-                <div className="inline-block">
-                  <p>{value.company}</p>
-                  <p>{value.address}</p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      {/* Header Section */}
+      <section className="py-20 bg-white/80 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="section-heading text-4xl md:text-5xl lg:text-6xl font-bold text-engineering-darkGray mb-8">
+            {experienceData.heading}
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-accent-500 to-primary-500 mx-auto rounded-full mb-8"></div>
+          <div className="max-w-md mx-auto">
+            <img
+              className="w-full h-auto rounded-2xl shadow-engineering animate-float"
+              src={workImg}
+              alt="Professional Experience"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Timeline */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="experience-timeline">
+            {experienceData.items.map((item, index) => (
+              <div key={index} className="timeline-item animate-slide-up" style={{ animationDelay: `${index * 0.2}s` }}>
+                <div className="engineering-card rounded-3xl p-8 md:p-10 mx-4 lg:mx-0">
+                  <div className="flex flex-col lg:flex-row items-start gap-8">
+                    {/* Timeline Content */}
+                    <div className="flex-1">
+                      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                        <div>
+                          <h3 className="text-2xl md:text-3xl font-bold text-primary-800 mb-2 font-playfair">
+                            {item.position}
+                          </h3>
+                          <p className="text-accent-600 font-semibold text-lg mb-2">{item.year}</p>
+                          <div className="text-engineering-gray">
+                            <p className="font-medium text-lg">{item.company}</p>
+                            <p className="text-sm">{item.address}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Responsibilities */}
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-engineering-darkGray border-b border-gray-200 pb-2">
+                          Key Responsibilities & Achievements
+                        </h4>
+                        <ul className="space-y-3">
+                          {item.description.map((desc, descIndex) => (
+                            <li key={descIndex} className="flex items-start gap-3">
+                              <div className="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"></div>
+                              <p className="text-engineering-darkGray leading-relaxed text-sm md:text-base">
+                                {desc}
+                              </p>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <ul className="max-w-300 border-4 border-solid border-t-amber-600 font-normal text-white lg:border-none xl:ml-10">
-                {value.description.map((value, idx) => (
-                  <li
-                    className={`${idx % 2 ? "bg-amber-100 md:float-left md:clear-right" : "bg-blue-100 md:float-right md:clear-left"} my-3 block rounded-2xl p-3 text-black shadow md:w-3/5`}
-                  >
-                    {value}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
