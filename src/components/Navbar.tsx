@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@tanstack/react-router";
-import resource from "@assets/resource.json";
+import { navigationData } from "@/data/navigationData";
 import { useState } from "react";
 
 interface NavbarProps {
@@ -46,25 +46,25 @@ export default function Navbar({ className = "" }: NavbarProps) {
             to="/"
             className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
           >
-            {resource["menu-item"][0]}
+            {navigationData["menu-item"][0]}
           </Link>
           <Link
             to="/academic"
             className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
           >
-            {resource["menu-item"][1]}
+            {navigationData["menu-item"][1]}
           </Link>
           <Link
             to="/experience"
             className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
           >
-            {resource["menu-item"][2]}
+            {navigationData["menu-item"][2]}
           </Link>
           <Link
             to="/skills"
             className="flex-2 border-b-5 border-solid border-white p-3 transition delay-150 duration-300 ease-in-out hover:border-amber-400"
           >
-            {resource["menu-item"][3]}
+            {navigationData["menu-item"][3]}
           </Link>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import resource from "@assets/resource.json";
+import { navigationData } from "@/data/navigationData";
 
 interface FooterProps {
   className?: string;
@@ -9,11 +9,11 @@ export default function Footer({ className = "" }: FooterProps) {
     <footer className={className}>
       <div className="px-5 py-2">
         ©{" "}
-        {resource.footer["copyright-year"]
-          ? resource.footer["copyright-year"]
+        {navigationData.footer["copyright-year"]
+          ? navigationData.footer["copyright-year"]
           : ""}{" "}
-        {resource.footer["copyright-org"]
-          ? resource.footer["copyright-org"]
+        {navigationData.footer["copyright-org"]
+          ? navigationData.footer["copyright-org"]
           : ""}
       </div>
     </footer>
