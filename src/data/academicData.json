@@ -1,55 +1,46 @@
-export interface AcademicItem {
-  year: string;
-  degree: string;
-  logo: string;
-  college: string;
-  address: string;
-  description: string[];
-}
-
-export const academicData = {
-  heading: "EDUCATION ACCOMPLISHMENTS",
-  items: [
+{
+  "heading": "EDUCATION ACCOMPLISHMENTS",
+  "items": [
     {
-      year: "2023-2024",
-      degree: "Administrative Business Management",
-      logo: "conestoga-logo.svg",
-      college: "Conestoga College",
-      address: "Brantford, Ontario, Canada",
-      description: [
+      "year": "2023-2024",
+      "degree": "Administrative Business Management",
+      "logo": "conestoga-logo.svg",
+      "college": "Conestoga College",
+      "address": "Brantford, Ontario, Canada",
+      "description": [
         "Developed strong time management and organizational skills to enhance office and business operations efficiency.",
         "Mastered effective communication techniques for creating, editing, and delivering professional materials across diverse platforms.",
         "Acquired valuable knowledge in human resource management to contribute to achieving organizational goals and strategic initiatives.",
-        "Leveraged advanced technological tools for communication, market analysis, collaboration, information management, data analytics, database management, and decision support to maximize administrative productivity.",
-      ],
+        "Leveraged advanced technological tools for communication, market analysis, collaboration, information management, data analytics, database management, and decision support to maximize administrative productivity."
+      ]
     },
     {
-      year: "2023-2023",
-      degree: "Project Management",
-      logo: "conestoga-logo.svg",
-      college: "Conestoga College",
-      address: "Brantford, Ontario, Canada",
-      description: [
+      "year": "2023-2023",
+      "degree": "Project Management",
+      "logo": "conestoga-logo.svg",
+      "college": "Conestoga College",
+      "address": "Brantford, Ontario, Canada",
+      "description": [
         "Demonstrated proficiency in managing project scope, cost, schedule, and quality to meet and exceed stakeholder expectations.",
         "Skilled in aligning projects with organizational strategic plans and justifying business needs effectively.",
         "Experienced in defining project goals, constraints, deliverables, and resource requirements through active stakeholder consultation.",
         "Acquired comprehensive knowledge of PMI project management methodologies, processes, lifecycle phases, and tools.",
-        "Adaptable and resourceful in executing project strategies, applying problem-solving skills and leading teamwork to overcome challenges and achieve success.",
-      ],
+        "Adaptable and resourceful in executing project strategies, applying problem-solving skills and leading teamwork to overcome challenges and achieve success."
+      ]
     },
     {
-      year: "2015-2021",
-      degree: "Bachelor of Engineering Civil Engineer",
-      logo: "sinhgad.jpeg",
-      college: "Sinhagad Academy of Engineering, Pune university",
-      address: "Pune, Maharastra, India",
-      description: [
+      "year": "2015-2021",
+      "degree": "Bachelor of Engineering Civil Engineer",
+      "logo": "sinhgad.jpeg",
+      "college": "Sinhagad Academy of Engineering, Pune university",
+      "address": "Pune, Maharastra, India",
+      "description": [
         "Possess a deep understanding of structural analysis, construction materials, geotechnical engineering, transportation systems, and water resource management.",
         "Skilled in analyzing and resolving complex engineering challenges through critical thinking and innovative problem-solving.",
         "Experienced in project planning, scheduling, budgeting, and resource management to ensure successful and timely project completion.",
         "Knowledgeable in sustainable design principles and environmental regulations aimed at minimizing project impact.",
-        "Proficient in AutoCAD software for precise design, drafting, and technical documentation.",
-      ],
-    },
-  ] as AcademicItem[],
-};
+        "Proficient in AutoCAD software for precise design, drafting, and technical documentation."
+      ]
+    }
+  ]
+}

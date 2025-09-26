@@ -1,4 +1,4 @@
-import { navigationData } from "@/data/navigationData";
+import navigationData from "@/data/navigationData.json";
 
 interface FooterProps {
   className?: string;

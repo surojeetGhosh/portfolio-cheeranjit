@@ -1,0 +1,23 @@
+{
+  "welcomeHeading": "WELCOME TO MY PORTFOLIO!",
+  "iAmText": "I AM",
+  "name": "CHEERANJIT GHOSH",
+  "whoAmI": "WHO AM I?",
+  "profileDescription": "I am a Certified Project Coordinator and Civil Engineer passionate about delivering quality project solutions and continuous growth.",
+  "wantToKnowMore": "Want to Know more?",
+  "reachMeOut": "Reach me out!!",
+  "cards": [
+    {
+      "key": "Professional Background",
+      "value": "I hold a Bachelor's degree in Civil Engineering and Graduate Certificates in Project Management and Administrative Business Management. I am certified as a Project Coordinator by the Project Management Association of Canada."
+    },
+    {
+      "key": "Experience and Skills",
+      "value": "With hands-on construction experience as a Project Engineer Intern and Junior Site Engineer, I support residential projects through site coordination, scheduling, documentation, and contractor supervision. I have strong organizational and interpersonal skills developed through prior roles, including inventory management and staff training as a Bakery Clerk."
+    },
+    {
+      "key": "Technical Proficiency and Certifications",
+      "value": "I am proficient in Microsoft Office, AutoCAD, MS Project, Tableau, JIRA, Monday.com, and have working knowledge of Primavera P6. My certifications in AutoCAD, WHMIS, Six Sigma White Belt, Procore, and First Aid & CPR enable me to contribute effectively to project delivery and team success."
+    }
+  ]
+}

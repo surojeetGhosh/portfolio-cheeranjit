@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { academicData } from "@/data/academicData";
+import academicData from "@/data/academicData.json";
 import conestogaLogo from "../assets/conestoga-logo.svg";
 import sinhgadLogo from "../assets/sinhgad.jpeg";
 import sideBar from "../assets/Wave.svg";

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { experienceData } from "@/data/experienceData";
+import experienceData from "@/data/experienceData.json";
 import workImg from "../assets/work.jpg";
 
 export const Route = createFileRoute("/experience")({

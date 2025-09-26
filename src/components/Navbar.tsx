@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@tanstack/react-router";
-import { navigationData } from "@/data/navigationData";
+import navigationData from "@/data/navigationData.json";
 import { useState } from "react";
 
 interface NavbarProps {

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { navigationData } from "@/data/navigationData";
-import { aboutData } from "@/data/aboutData";
+import navigationData from "@/data/navigationData.json";
+import aboutData from "@/data/aboutData.json";
 import Card from "@/components/Card";
 import profileImg from "../assets/imagePerson.jpg";
 import whatIDoImg from "../assets/whatido.jpg";

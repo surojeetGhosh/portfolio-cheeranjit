@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { skillsData } from "@/data/skillsData";
+import skillsData from "@/data/skillsData.json";
 
 export const Route = createFileRoute("/skills")({
   component: Skills,
